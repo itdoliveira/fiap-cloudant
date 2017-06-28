@@ -10,6 +10,7 @@
   - Issues
   - Delivery Pipeline
   - Eclipse Orion Web IDE
+  - Conexão com Slack
 
 - Serviços 
   - Auto Scalling
