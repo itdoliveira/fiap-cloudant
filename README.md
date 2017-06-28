@@ -10,4 +10,8 @@
   - Issues
   - Delivery Pipeline
   - Eclipse Orion Web IDE
+
+- Serviços 
+  - Auto Scalling
+  - Cloudant NoSQL
   
