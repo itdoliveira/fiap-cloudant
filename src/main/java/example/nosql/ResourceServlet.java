@@ -212,7 +212,7 @@ public class ResourceServlet {
 
 			db.update(obj);
 
-			System.out.println("Update Successful.");
+			System.out.println("Arquivo armazenado com sucesso.");
 
 			return Response.ok("OK").build();
 		}
@@ -270,8 +270,8 @@ public class ResourceServlet {
 	private List<HashMap> initializeSampleData(Database db) throws Exception {
 
 		long id = System.currentTimeMillis();
-		String name = "Sample category";
-		String value = "List of sample files";
+		String name = "Categoria";
+		String value = "Lista de Categorias";
 
 		// create a new document
 		System.out.println("Creating new document with id : " + id);
@@ -286,10 +286,10 @@ public class ResourceServlet {
 		HashMap<String, Object> obj = db.find(HashMap.class, id + "");
 
 		// attachment#1
-		File file = new File("Sample.txt");
+		File file = new File("Exemplo.txt");
 		file.createNewFile();
 		PrintWriter writer = new PrintWriter(file);
-		writer.write("This is a sample file...");
+		writer.write("Um exemplo...");
 		writer.flush();
 		writer.close();
 		FileInputStream fileInputStream = new FileInputStream(file);
